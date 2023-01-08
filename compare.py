@@ -2,7 +2,13 @@ import sys
 from app import alg
 
 read, write = sys.argv[1:]
-file_input = open(read).read().split()
+try:
+    file_input = open(read).read().split()
+except FileNotFoundError:
+    print('Create an input file!')
+    file_input = ''
+
+
 answer = ''
 for i in range(0, len(file_input), 2):
     a = ''.join(open(file_input[i]).read().split())
