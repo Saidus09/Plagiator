@@ -1,6 +1,5 @@
 # Plagiator
 This is an anti-plagiarism utility that compares two Python programs and evaluates their similarity.
-The built-in Python module difflib was used here.
 # levenstein.py
 This file calculates the Levenstein distance and the similarity of file pairs.
 # compare.py
